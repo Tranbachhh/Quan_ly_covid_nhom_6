@@ -15,13 +15,13 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
     <left>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
-            <children>
-                <ImageView fitHeight="263.0" fitWidth="244.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <children>
+                <ImageView fitHeight="263.0" fitWidth="244.0" layoutX="-22.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../image/bg_login.png" />
                     </image>
                 </ImageView>
-            </children>
+         </children>
         </AnchorPane>
     </left>
     <center>
@@ -41,12 +41,12 @@
                         <Image url="@../image/key_icon.png" />
                     </image>
                 </ImageView>
-                <Text fill="#0598ff" layoutX="80.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" textAlignment="CENTER">
+                <Text fill="#ff0505" layoutX="80.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" textAlignment="CENTER">
                     <font>
                         <Font name="Arial Bold" size="36.0" />
                     </font>
                 </Text>
-                <Button fx:id="LoginButton" layoutX="62.0" layoutY="285.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="11.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE">
+                <Button fx:id="LoginButton" layoutX="62.0" layoutY="285.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="11.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" underline="true">
                     <font>
                         <Font name="Arial" size="22.0" />
                     </font>
@@ -54,7 +54,7 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </Button>
-                <Button fx:id="ExitButton" layoutX="193.0" layoutY="285.0" mnemonicParsing="false" onAction="#ExitButtonOnAction" prefHeight="22.0" prefWidth="108.0" style="-fx-background-color: #0598ff;" text="Exit" textAlignment="CENTER" textFill="WHITE">
+                <Button fx:id="ExitButton" cancelButton="true" graphicTextGap="5.0" layoutX="193.0" layoutY="285.0" mnemonicParsing="false" onAction="#ExitButtonOnAction" prefHeight="22.0" prefWidth="108.0" style="-fx-background-color: #0598ff;" text="Exit" textAlignment="CENTER" textFill="WHITE" underline="true">
                     <font>
                         <Font name="Arial" size="22.0" />
                     </font>

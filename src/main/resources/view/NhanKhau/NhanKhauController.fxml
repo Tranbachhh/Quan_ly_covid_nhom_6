@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.ContextMenu?>
@@ -20,9 +15,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="709.0" prefWidth="953.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.NhanKhauController">
+<AnchorPane prefHeight="709.0" prefWidth="953.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.NhanKhauController">
     <children>
-        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0">
+        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0" style="-fx-background-color: #01A9DB;">
             <children>
                 <Label layoutX="388.0" layoutY="14.0" text="Quản lý thông tin nhân khẩu" textFill="#f8f3f3">
                     <font>
@@ -53,24 +48,24 @@
                         </ContextMenu>
                     </contextMenu>
                 </TableView>
-                <Button fx:id="themNhanKhau" layoutX="934.0" layoutY="188.0" onAction="#changScenceThemNhanKhau" mnemonicParsing="false" prefHeight="50.0" prefWidth="201.0" style="-fx-background-color: #F1D4A7;" text="Thêm nhân khẩu">
+                <Button fx:id="themNhanKhau" layoutX="934.0" layoutY="188.0" mnemonicParsing="false" onAction="#changScenceThemNhanKhau" prefHeight="50.0" prefWidth="201.0" style="-fx-background-color: #F1D4A7;" text="Thêm nhân khẩu">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
                 <Pane layoutX="69.0" layoutY="107.0" prefHeight="50.0" prefWidth="822.0" style="-fx-background-color: #FFFFC9; -fx-background-radius: 30;">
                     <children>
-                        <ImageView fx:id="confirmF" onMouseClicked="#findF"  fitHeight="50.0" fitWidth="60.0" layoutX="758.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="confirmF" fitHeight="50.0" fitWidth="60.0" layoutX="758.0" onMouseClicked="#findF" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../../image/search.png" />
                             </image>
                         </ImageView>
-                        <TextField fx:id="duLieuF" layoutX="7.0"  prefHeight="50.0" prefWidth="430.0" promptText="Nhập dữ liệu cần tra cứu" style="-fx-background-color: 0;">
+                        <TextField fx:id="duLieuF" layoutX="7.0" prefHeight="50.0" prefWidth="430.0" promptText="Nhập dữ liệu cần tra cứu" style="-fx-background-color: 0;">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </TextField>
-                        <ComboBox fx:id="truongTraCuuF"  layoutX="507.0" layoutY="1.0" prefHeight="49.0" prefWidth="231.0" promptText="Chọn trường tra cứu" style="-fx-font-size: 15; -fx-background-radius: 15; -fx-background-color: #F1D4A7;" />
+                        <ComboBox fx:id="truongTraCuuF" layoutX="507.0" layoutY="1.0" prefHeight="49.0" prefWidth="231.0" promptText="Chọn trường tra cứu" style="-fx-font-size: 15; -fx-background-radius: 15; -fx-background-color: #F1D4A7;" />
                     </children>
                 </Pane>
                 <Text fill="#d7ca13" layoutX="70.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(*) Với mỗi một nhân khẩu, chọn chuột phải để hiện các phím chức năng" wrappingWidth="721.00390625">

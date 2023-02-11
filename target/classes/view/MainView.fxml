@@ -170,6 +170,6 @@
         </VBox>
     </left>
     <center>
-        <Pane fx:id="mainPane" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #FFFFC9;" BorderPane.alignment="CENTER" />
+        <Pane fx:id="mainPane" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #01A9DB;" BorderPane.alignment="CENTER" />
     </center>
 </BorderPane>
