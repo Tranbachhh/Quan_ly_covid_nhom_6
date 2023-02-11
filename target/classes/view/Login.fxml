@@ -46,7 +46,7 @@
                         <Font name="Arial Bold" size="36.0" />
                     </font>
                 </Text>
-                <Button fx:id="LoginButton" layoutX="62.0" layoutY="285.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="11.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" underline="true">
+                <Button fx:id="LoginButton" layoutX="57.0" layoutY="307.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="11.0" prefWidth="106.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" underline="true">
                     <font>
                         <Font name="Arial" size="22.0" />
                     </font>
@@ -54,7 +54,7 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </Button>
-                <Button fx:id="ExitButton" cancelButton="true" graphicTextGap="5.0" layoutX="193.0" layoutY="285.0" mnemonicParsing="false" onAction="#ExitButtonOnAction" prefHeight="22.0" prefWidth="108.0" style="-fx-background-color: #0598ff;" text="Exit" textAlignment="CENTER" textFill="WHITE" underline="true">
+                <Button fx:id="ExitButton" cancelButton="true" graphicTextGap="5.0" layoutX="206.0" layoutY="307.0" mnemonicParsing="false" onAction="#ExitButtonOnAction" prefHeight="22.0" prefWidth="108.0" style="-fx-background-color: #0598ff;" text="Exit" textAlignment="CENTER" textFill="WHITE" underline="true">
                     <font>
                         <Font name="Arial" size="22.0" />
                     </font>
@@ -68,14 +68,6 @@
                     </font>
                 </Label>
                 <AnchorPane layoutX="110.0" layoutY="99.0" opacity="0.63" prefHeight="6.0" prefWidth="128.0" style="-fx-background-color: #000000;" />
-                <Text fill="#0598ff" layoutX="94.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Your Password ?" textAlignment="CENTER">
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                    <font>
-                        <Font name="Arial" size="16.0" />
-                    </font>
-                </Text>
                 <PasswordField fx:id="Password" layoutX="81.0" layoutY="218.0" prefHeight="33.0" prefWidth="218.0" promptText="Password" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #0598ff;">
                     <font>
                         <Font name="Arial" size="17.0" />

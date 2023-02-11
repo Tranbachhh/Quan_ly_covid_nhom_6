@@ -50,7 +50,7 @@
                 </Button>
                 <Pane layoutX="69.0" layoutY="107.0" prefHeight="50.0" prefWidth="822.0" style="-fx-background-color: #FFFFC9; -fx-background-radius: 30;">
                     <children>
-                        <ImageView fx:id="confirmF" fitHeight="50.0" fitWidth="60.0" layoutX="758.0" onMouseClicked="#findF" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="confirmF" fitHeight="50.0" fitWidth="60.0" layoutX="772.0" layoutY="1.0" onMouseClicked="#findF" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../../image/search.png" />
                             </image>

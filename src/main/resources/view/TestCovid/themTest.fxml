@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -21,9 +16,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane prefHeight="699.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestCovid.ThemTestController">
+<ScrollPane prefHeight="699.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestCovid.ThemTestController">
     <content>
-        <AnchorPane prefHeight="687.0" prefWidth="1117.0" style="-fx-background-color: #2F333D;">
+        <AnchorPane prefHeight="687.0" prefWidth="1117.0" style="-fx-background-color: #01A9DB #01A9DB;">
             <children>
                 <Label fx:id="hoTenLabel" layoutX="277.0" layoutY="84.0" prefHeight="30.0" prefWidth="358.0" text="Chưa có thông tin" textFill="#ffff8d">
                     <font>

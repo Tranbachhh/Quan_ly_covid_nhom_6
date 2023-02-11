@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="586.0" prefWidth="1031.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.ChiTietNhanKhauController">
+<AnchorPane prefHeight="586.0" prefWidth="1031.0" style="-fx-background-color: #01A9DB #01A9DB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.ChiTietNhanKhauController">
     <children>
         <Label fx:id="hoTenLabel" layoutX="226.0" layoutY="119.0" prefHeight="21.0" prefWidth="374.0" text="Label" textFill="#ffff8d">
             <font>

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
@@ -14,9 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane prefHeight="701.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.ThemNhanKhauController">
+<ScrollPane prefHeight="701.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.ThemNhanKhauController">
     <content>
-        <AnchorPane prefHeight="687.0" prefWidth="1078.0" style="-fx-background-color: #2F333D;">
+        <AnchorPane prefHeight="687.0" prefWidth="1078.0" style="-fx-background-color: #01A9DB #01A9DB;">
             <children>
                 <TextField fx:id="hoTenF" layoutX="146.0" layoutY="103.0" prefHeight="37.0" prefWidth="313.0" style="-fx-background-color: #FFFFC9;">
                     <font>
@@ -192,7 +188,7 @@
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font></Button>
-                <Button layoutX="856.0" layoutY="614.0" mnemonicParsing="false" prefHeight="45.0" onMouseClicked="#huy" prefWidth="85.0" style="-fx-background-color: #F1D4A7;" text="Hủy">
+                <Button layoutX="856.0" layoutY="614.0" mnemonicParsing="false" onMouseClicked="#huy" prefHeight="45.0" prefWidth="85.0" style="-fx-background-color: #F1D4A7;" text="Hủy">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font></Button>
@@ -214,7 +210,7 @@
                         <Font name="System Italic" size="20.0" />
                     </font>
                 </Text>
-                <ComboBox fx:id="comb" layoutX="148.0" layoutY="333.0" prefHeight="36.0" prefWidth="308.0" onAction="#Select" promptText="Chọn giới tính" style="-fx-background-color: FFFFC9;" />
+                <ComboBox fx:id="comb" layoutX="148.0" layoutY="333.0" onAction="#Select" prefHeight="36.0" prefWidth="308.0" promptText="Chọn giới tính" style="-fx-background-color: FFFFC9;" />
             </children>
         </AnchorPane>
     </content>
