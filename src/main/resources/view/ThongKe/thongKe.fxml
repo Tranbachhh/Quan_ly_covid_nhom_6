@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1180.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKe.ThongKeController">
+    <children>
+        <Label layoutX="534.0" layoutY="25.0" text="Thống kê" textFill="#f8f3f3">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <AnchorPane fx:id="khaiBaoMode" layoutX="154.0" layoutY="164.0" onMouseClicked="#khaiBaoModeClick">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="54.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/khai_bao.png" />
+                    </image></ImageView>
+                <TextField alignment="CENTER" layoutX="20.0" layoutY="150.0" prefHeight="54.0" prefWidth="249.0" style="-fx-background-color: 0; -fx-text-inner-color: #E8E8E8;" text="Thống kê khai báo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font></TextField>
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </AnchorPane>
+        <AnchorPane fx:id="nhanKhauMode" layoutX="720.0" layoutY="164.0" onMouseClicked="#nhanKhauModeClick">
+            <children>
+                <ImageView fitHeight="134.0" fitWidth="134.0" layoutX="71.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/nhan_khau.png" />
+                    </image>
+                </ImageView>
+                <TextField alignment="CENTER" layoutX="-21.0" layoutY="150.0" prefHeight="54.0" prefWidth="276.0" style="-fx-background-color: 0; -fx-text-inner-color: #E8E8E8;" text="Thống kê nhân khẩu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </TextField>
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </AnchorPane>
+        <AnchorPane fx:id="testCovidMode" layoutX="720.0" layoutY="412.0" onMouseClicked="#testCovidModeClick">
+            <children>
+                <ImageView fitHeight="124.0" fitWidth="134.0" layoutX="91.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/covid-test.png" />
+                    </image>
+                </ImageView>
+                <TextField alignment="CENTER" layoutX="-37.0" layoutY="150.0" prefHeight="54.0" prefWidth="305.0" style="-fx-background-color: 0; -fx-text-inner-color: #E8E8E8;" text="Thống kê Test Covid" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </TextField>
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </AnchorPane>
+        <AnchorPane fx:id="cachLyMode" layoutX="123.0" layoutY="412.0" onMouseClicked="#cachLyModeClick">
+            <children>
+                <ImageView fitHeight="124.0" fitWidth="134.0" layoutX="91.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/cach_ly_icon.png" />
+                    </image>
+                </ImageView>
+                <TextField alignment="CENTER" layoutX="-37.0" layoutY="150.0" prefHeight="54.0" prefWidth="305.0" style="-fx-background-color: 0; -fx-text-inner-color: #E8E8E8;" text="Thống kê cách ly" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </TextField>
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </AnchorPane>
+    </children>
+</Pane>

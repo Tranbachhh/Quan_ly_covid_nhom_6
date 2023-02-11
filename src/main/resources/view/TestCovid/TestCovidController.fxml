@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="709.0" prefWidth="953.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestCovid.TestCovidController">
+    <children>
+        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0">
+            <children>
+                <Label layoutX="350.0" layoutY="14.0" text="Quản lý thông tin Test Covid" textFill="#f8f3f3">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="table" layoutX="70.0" layoutY="188.0" prefHeight="433.0" prefWidth="822.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="88.0" text="ID khai báo" />
+                        <TableColumn fx:id="hoTenColumn" prefWidth="202.0" text="Họ tên" />
+                        <TableColumn fx:id="CMNDColumn" prefWidth="122.0" text="CMND" />
+                        <TableColumn fx:id="thoiDiemTestColumn" prefWidth="131.0" text="Thời điểm Test" />
+                        <TableColumn fx:id="hinhThucColumn" minWidth="0.0" prefWidth="142.0" text="Hình thức Test" />
+                        <TableColumn fx:id="ketQuaColumn" prefWidth="136.0" text="Kết quả" />
+
+                    </columns>
+                    <contextMenu>
+                        <ContextMenu>
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#delete" text="Xóa thông tin khai báo" />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </TableView>
+                <Button fx:id="themTest" layoutX="934.0" onAction="#add" layoutY="188.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="194.0" style="-fx-background-color: #F1D4A7;" text="Thêm bản ghi">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Pane layoutX="69.0" layoutY="107.0" prefHeight="50.0" prefWidth="822.0" style="-fx-background-color: #FFFFC9; -fx-background-radius: 30;">
+                    <children>
+                        <ImageView fx:id="confirmF" fitHeight="50.0" fitWidth="60.0" layoutX="758.0" onMouseClicked="#findF" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/search.png" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="duLieuF" layoutX="7.0" prefHeight="50.0" prefWidth="430.0" promptText="Nhập dữ liệu cần tra cứu" style="-fx-background-color: 0;">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextField>
+                        <ComboBox fx:id="truongTraCuuF" layoutX="507.0" layoutY="1.0" prefHeight="49.0" prefWidth="231.0" promptText="Chọn trường tra cứu" style="-fx-font-size: 15; -fx-background-radius: 15; -fx-background-color: #F1D4A7;" />
+                    </children>
+                </Pane>
+                <Text fill="#d7ca13" layoutX="70.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(*) Với mỗi một bản khai báo, chọn chuột phải để hiện các phím chức năng" wrappingWidth="721.00390625">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Text>
+                <Button layoutX="934.0" layoutY="280.0" mnemonicParsing="false" onAction="#loadData" prefHeight="49.0" prefWidth="194.0" style="-fx-background-color: #F1D4A7;" text="Tải lại bảng">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font></Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

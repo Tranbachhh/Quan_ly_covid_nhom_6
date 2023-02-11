@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="725.0" prefWidth="1180.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKe.ThongKeCachLyController">
+    <children>
+        <Pane prefHeight="66.0" prefWidth="1180.0" style="-fx-background-color: #FFFFC9;">
+            <children>
+                <ImageView fx:id="BackIcon" fitHeight="50.0" fitWidth="153.0" layoutX="27.0" layoutY="9.0" onMouseClicked="#backClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/back.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="403.0" layoutY="11.0" text="Thống kê Cách Ly" textFill="#332a99">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font></Label>
+            </children>
+        </Pane>
+        <Pane fx:id="mucDo" layoutX="44.0" layoutY="165.0" prefHeight="430.0" prefWidth="479.0" style="-fx-background-color: #FFFF8D;">
+            <children>
+                <Label layoutX="174.0" layoutY="14.0" text="Mức độ" textFill="#2f333d">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="noiCachLy" layoutX="620.0" layoutY="454.0" prefHeight="248.0" prefWidth="403.0" style="-fx-background-color: #FFFF8D;">
+            <children>
+                <Label layoutX="299.0" layoutY="109.0" text="Nơi cách ly" textFill="#2f333d">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="bieuDo" layoutX="553.0" layoutY="96.0" prefHeight="331.0" prefWidth="608.0" style="-fx-background-color: #FFFF8D;" />
+    </children>
+</Pane>

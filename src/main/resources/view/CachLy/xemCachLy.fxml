@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="662.0" prefWidth="740.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CachLy.XemCachLyController">
+    <children>
+        <TextArea fx:id="lyDoF" disable="true" layoutX="250.0" layoutY="423.0" prefHeight="121.0" prefWidth="336.0" style="-fx-background-color: #FFFFC9; -fx-control-inner-background: #FFFFC9;">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></TextArea>
+        <Label layoutX="56.0" layoutY="423.0" text="Lý do:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <DatePicker fx:id="tuNgayF" disable="true" layoutX="249.0" layoutY="292.0" prefHeight="44.0" prefWidth="212.0" style="-fx-background-color: #FFFFC9; -fx-control-inner-background: #FFFFC9;" />
+        <Label fx:id="hoTenLabel" layoutX="248.0" layoutY="80.0" prefHeight="27.0" prefWidth="242.0" text="Label" textFill="#ffff8d">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Label>
+        <Label layoutX="56.0" layoutY="295.0" text="Từ ngày:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <Label layoutX="54.0" layoutY="238.0" text="Mức độ Cách Ly :" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <TextField fx:id="mucDoF" disable="true" layoutX="250.0" layoutY="234.0" prefHeight="37.0" prefWidth="336.0" style="-fx-background-color: #FFFFC9;">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></TextField>
+        <Text fill="WHITE" layoutX="60.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CMND :" wrappingWidth="174.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Text>
+        <Label fx:id="cmndLabel" layoutX="250.0" layoutY="121.0" prefHeight="31.0" prefWidth="131.0" text="Label" textFill="#ffff8d">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Label>
+        <Text fill="WHITE" layoutX="60.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên :">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Text>
+        <Label layoutX="56.0" layoutY="176.0" prefHeight="30.0" prefWidth="166.0" text="Nơi Cách Ly :" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <TextField fx:id="noiCachLyF" disable="true" layoutX="250.0" layoutY="172.0" prefHeight="37.0" prefWidth="336.0" style="-fx-background-color: #FFFFC9;">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></TextField>
+        <Label alignment="CENTER" layoutX="222.0" layoutY="14.0" prefHeight="45.0" prefWidth="322.0" text="Xem thông tin Cách ly" textFill="#f8f3f3">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Button layoutX="514.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#huy" prefHeight="44.0" prefWidth="108.0" style="-fx-background-color: #F7E7CE;" text="Đóng">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+        <Label layoutX="56.0" layoutY="363.0" text="Đến ngày :" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="denNgayF" disable="true" layoutX="249.0" layoutY="356.0" prefHeight="44.0" prefWidth="212.0" style="-fx-background-color: #FFFFC9; -fx-control-inner-background: #FFFFC9;" />
+    </children>
+</AnchorPane>

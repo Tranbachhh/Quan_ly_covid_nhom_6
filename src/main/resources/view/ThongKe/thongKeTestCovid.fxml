@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="725.0" prefWidth="1180.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKe.ThongKeTestCovidController">
+    <children>
+        <Pane prefHeight="66.0" prefWidth="1180.0" style="-fx-background-color: #FFFFC9;">
+            <children>
+                <ImageView fx:id="BackIcon" fitHeight="50.0" fitWidth="153.0" layoutX="27.0" layoutY="9.0" onMouseClicked="#backClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/back.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="446.0" layoutY="11.0" text="Thống kê Test Covid" textFill="#332a99">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font></Label>
+            </children>
+        </Pane>
+        <Pane fx:id="hinhThucTest" layoutX="89.0" layoutY="420.0" prefHeight="286.0" prefWidth="452.0" style="-fx-background-color: #FFFF8D;">
+            <children>
+                <Label layoutX="133.0" layoutY="14.0" text="Hình thức Test" textFill="#2f333d">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="ketQua" layoutX="630.0" layoutY="420.0" prefHeight="286.0" prefWidth="459.0" style="-fx-background-color: #FFFF8D;">
+            <children>
+                <Label layoutX="157.0" layoutY="14.0" text="Kết quả" textFill="#2f333d">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="bieuDo" layoutX="286.0" layoutY="76.0" prefHeight="331.0" prefWidth="608.0" style="-fx-background-color: #FFFF8D;" />
+    </children>
+</Pane>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1100.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TrangChuController">
+    <children>
+        <VBox layoutX="137.0" layoutY="136.0" prefHeight="485.0" prefWidth="963.0" style="-fx-background-color: #2F333D;">
+            <children>
+                <HBox prefHeight="120.0" prefWidth="853.0">
+                    <children>
+                        <Pane prefHeight="100.0" prefWidth="162.0" style="-fx-background-color: #2F333D; -fx-background-radius: 20;">
+                            <children>
+                                <ImageView fitHeight="85.0" fitWidth="84.0" layoutX="41.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/nhan_khau.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <Pane prefHeight="77.0" prefWidth="754.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Số nhân khẩu có trên địa bàn:" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="tongNhanKhauThuongTru" layoutX="34.0" layoutY="43.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="853.0">
+                    <children>
+                        <Pane prefHeight="90.0" prefWidth="160.0" style="-fx-background-color: #2F333D; -fx-background-radius: 20;">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                            <children>
+                                <ImageView fitHeight="85.0" fitWidth="84.0" layoutX="39.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/ho_khau.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="77.0" prefWidth="757.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Số hộ khẩu có trên địa bàn:" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="tongHoKhauThuongTru" layoutX="35.0" layoutY="43.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="115.0" prefHeight="120.0" prefWidth="853.0">
+                    <children>
+                        <Pane prefHeight="90.0" prefWidth="160.0" style="-fx-background-color: #2F333D; -fx-background-radius: 20;">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                            <children>
+                                <ImageView fitHeight="85.0" fitWidth="84.0" layoutX="38.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/tam_tru.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="86.0" prefWidth="299.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Tạm trú:" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="tongNhanKhauTamTru" layoutX="34.0" layoutY="43.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <Pane prefHeight="90.0" prefWidth="160.0">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                            <children>
+                                <ImageView fitHeight="85.0" fitWidth="84.0" layoutX="38.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/cach_ly.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="86.0" prefWidth="299.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Cách ly" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="tongCachLy" layoutX="34.0" layoutY="43.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="250.0" prefHeight="120.0" prefWidth="853.0">
+                    <children>
+                        <Pane prefHeight="90.0" prefWidth="160.0" style="-fx-background-color: #2F333D; -fx-background-radius: 20;">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                            <children>
+                                <ImageView fitHeight="85.0" fitWidth="84.0" layoutX="40.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/tam_vang.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="86.0" prefWidth="299.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Tạm vắng:" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="tongNhanKhauTamVang" layoutX="33.0" layoutY="43.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <Pane prefHeight="90.0" prefWidth="160.0" style="-fx-background-color: #2F333D; -fx-background-radius: 20;">
+                            <children>
+                                <ImageView fitHeight="80.0" fitWidth="88.0" layoutX="40.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/tiem_chung.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="86.0" prefWidth="299.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Test Covid" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                    </children>
+                </HBox>
+                <HBox prefHeight="120.0" prefWidth="853.0">
+                    <children>
+                        <Pane prefHeight="100.0" prefWidth="162.0" style="-fx-background-color: #2F333D; -fx-background-radius: 20;">
+                            <children>
+                                <ImageView fitHeight="85.0" fitWidth="84.0" layoutX="41.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/khai_bao.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <Pane prefHeight="77.0" prefWidth="760.0" style="-fx-background-color: #FFFF8D; -fx-background-radius: 20;">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="365.0" text="Khai báo y tế" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="tongKhaiBaoYTe" layoutX="34.0" layoutY="43.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Pane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label layoutX="441.0" layoutY="38.0" text="Quản lý tổ dân phố" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+              <Label fx:id="tongTest" layoutX="971.0" layoutY="479.0" prefHeight="35.0" prefWidth="365.0" textFill="#2f333d">
+                  <font>
+                      <Font name="System Bold" size="24.0" />
+                  </font>
+              </Label>
+    </children>
+</Pane>
