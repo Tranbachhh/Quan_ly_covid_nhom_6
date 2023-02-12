@@ -16,7 +16,7 @@
     <left>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
          <children>
-                <ImageView fitHeight="263.0" fitWidth="244.0" layoutX="-22.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="400.0" fitWidth="244.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                     <image>
                         <Image url="@../image/bg_login.png" />
                     </image>
@@ -25,7 +25,7 @@
         </AnchorPane>
     </left>
     <center>
-        <AnchorPane prefHeight="400.0" prefWidth="375.0" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="400.0" prefWidth="375.0" style="-fx-background-color: #FFC0CB;" BorderPane.alignment="CENTER">
             <children>
                 <TextField fx:id="UserName" layoutX="80.0" layoutY="151.0" prefHeight="33.0" prefWidth="218.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
                     <font>

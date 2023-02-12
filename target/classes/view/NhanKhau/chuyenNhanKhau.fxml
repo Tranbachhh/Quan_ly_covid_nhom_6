@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="614.0" prefWidth="814.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.ChuyenNhanKhauController">
+<AnchorPane prefHeight="614.0" prefWidth="814.0" style="-fx-background-color: #01A9DB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhau.ChuyenNhanKhauController">
     <children>
         <Label layoutX="53.0" layoutY="326.0" text="Ghi chú :" textFill="WHITE">
             <font>

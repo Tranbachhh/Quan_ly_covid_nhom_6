@@ -19,7 +19,7 @@
             <font>
                 <Font name="System Bold" size="20.0" />
             </font></Label>
-        <DatePicker fx:id="tuNgayF" disable="true" layoutX="249.0" layoutY="292.0" prefHeight="44.0" prefWidth="212.0" style="-fx-background-color: #FFFFFF; -fx-control-inner-background: #FFFFFF;" />
+        <DatePicker fx:id="tuNgayF" disable="true" layoutX="249.0" layoutY="292.0" prefHeight="44.0" prefWidth="212.0" style="-fx-background-color: #FFFFC9; -fx-control-inner-background: #000000;" />
         <Label fx:id="hoTenLabel" layoutX="248.0" layoutY="80.0" prefHeight="27.0" prefWidth="242.0" text="Label" textFill="#ffff8d">
             <font>
                 <Font name="System Bold" size="18.0" />
