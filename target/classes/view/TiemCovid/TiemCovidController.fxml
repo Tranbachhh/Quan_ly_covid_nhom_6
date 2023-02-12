@@ -8,16 +8,14 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="709.0" prefWidth="953.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CachLy.CachLyController">
+<AnchorPane prefHeight="709.0" prefWidth="953.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TiemCovid.TiemCovidController">
     <children>
-        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0" style="-fx-background-color: #01A9DB;">
+        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0">
             <children>
                 <Label layoutX="350.0" layoutY="14.0" text="Quản lý thông tin Cách ly" textFill="#f8f3f3">
                     <font>
@@ -27,34 +25,26 @@
                 <TableView fx:id="table" layoutX="72.0" layoutY="188.0" prefHeight="433.0" prefWidth="809.0">
                     <columns>
                         <TableColumn fx:id="idColumn" prefWidth="64.0" text="ID" />
-                        <TableColumn fx:id="hoTenColumn" prefWidth="183.0" text="Họ tên" />
-                        <TableColumn fx:id="ngayBatDauColumn" prefWidth="144.0" text="Ngày bắt đầu" />
-                        <TableColumn fx:id="ngayKetThucColumn" prefWidth="124.0" text="Ngày kết thúc" />
-                        <TableColumn fx:id="noiCachLyColumn" minWidth="0.0" prefWidth="178.0" text="Nơi cách ly" />
-                        <TableColumn fx:id="mucDoColumn" prefWidth="127.0" text="Mức độ" />
+                        <TableColumn fx:id="hoTenColumn" prefWidth="244.00001525878906" text="Họ tên" />
+                        <TableColumn fx:id="noiTiemColumn" minWidth="0.0" prefWidth="381.33331298828125" text="Nơi tiêm" />
+                        <TableColumn fx:id="soMuiColumn" minWidth="0.0" prefWidth="118.66668701171875" text="Số mũi" />
 
                     </columns>
                     <contextMenu>
                         <ContextMenu>
                             <items>
-                                <MenuItem mnemonicParsing="false" onAction="#xemCachLy" text="Xem thông tin khai báo" />
                                 <MenuItem mnemonicParsing="false" onAction="#delete" text="Xóa thông tin khai báo" />
                             </items>
                         </ContextMenu>
                     </contextMenu>
                 </TableView>
-                <Button fx:id="themCachLy" layoutX="934.0" layoutY="188.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="194.0" style="-fx-background-color: #F1D4A7;" text="Thêm bản ghi">
+                <Button fx:id="themTiemCoivd" layoutX="934.0" layoutY="188.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="194.0" style="-fx-background-color: #F1D4A7;" text="Thêm bản ghi">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
                 <Pane layoutX="69.0" layoutY="107.0" prefHeight="50.0" prefWidth="822.0" style="-fx-background-color: #FFFFC9; -fx-background-radius: 30;">
                     <children>
-                        <ImageView fx:id="confirmF" fitHeight="50.0" fitWidth="60.0" layoutX="772.0" layoutY="1.0" onMouseClicked="#findF" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../image/search.png" />
-                            </image>
-                        </ImageView>
                         <TextField fx:id="duLieuF" layoutX="7.0" prefHeight="50.0" prefWidth="430.0" promptText="Nhập dữ liệu cần tra cứu" style="-fx-background-color: 0;">
                             <font>
                                 <Font size="15.0" />

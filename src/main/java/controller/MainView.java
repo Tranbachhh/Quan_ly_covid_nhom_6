@@ -55,6 +55,9 @@ public class MainView implements Initializable {
     private Button thongKeButton;
 
     @FXML
+    private Button tiemCovidButton;
+
+    @FXML
     private Button dangXuatButton;
 
     @FXML
@@ -75,7 +78,7 @@ public class MainView implements Initializable {
         khaiBaoButton.setStyle("-fx-background-color: #2F333D;");
         cachLyButton.setStyle("-fx-background-color: #2F333D;");
         thongKeButton.setStyle("-fx-background-color: #2F333D;");
-
+        tiemCovidButton.setStyle("-fx-background-color: #2F333D;");
     }
 
     public void trangChuButtonOnAction(ActionEvent event) throws IOException {
@@ -131,6 +134,14 @@ public class MainView implements Initializable {
         cachLyButton.setStyle("-fx-background-color: #757C95;");
 
         Pane trangChuPane =  FXMLLoader.load(getClass().getResource("/view/CachLy/CachLyController.fxml"));
+        mainPane.getChildren().add(trangChuPane);
+    }
+
+    public void tiemCovidButtonOnAction(ActionEvent event) throws IOException {
+        resetButtonBackground();
+        tiemCovidButton.setStyle("-fx-background-color: #757C95;");
+
+        Pane trangChuPane =  FXMLLoader.load(getClass().getResource("/view/TiemCovid/TiemCovidController.fxml"));
         mainPane.getChildren().add(trangChuPane);
     }
 

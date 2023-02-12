@@ -103,4 +103,7 @@ public class SQLCommand {
     public static String CACH_LY_QUERY_TONG_CHUARO="SELECT COUNT(*) FROM `cach_ly` WHERE mucDoCachLy =N'Chưa rõ'";
     public static String CACH_LY_QUERY_TONG_TAINHA="SELECT COUNT(*) FROM `cach_ly` WHERE noiCachLy =N'Tại nhà'";
     public static String CACH_LY_QUERY_TONG_THEOTHANG="SELECT COUNT(*) FROM `cach_ly` WHERE MONTH(ngayBatDau) = ?";
+    public static String TIEM_COVID_QUERY_LOADDATATIEMCOVIDCONTROLLER="SELECT tcv.*,nk.hoTen,nk.cmnd FROM `tiem_covid` tcv, `nhan_khau` nk WHERE tcv.idNhanKhau=nk.idNhanKhau";
+    public static String TIEM_COVID_QUERY_THEMTIEMCOVIDLY="INSERT INTO `tiem_covid`(idNhanKhau,noiTiem,soMui) values (?,?,?)";
+    public static String TIEM_COVID_QUERY_DELETE_TIEMCOVID="DELETE FROM `tiem_covid` WHERE id = ?";
 }

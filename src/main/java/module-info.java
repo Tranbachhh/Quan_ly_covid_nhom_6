@@ -24,4 +24,6 @@ module com.example.nmcnpm20221nhom6 {
     opens controller.TestCovid to javafx.fxml;
     exports controller.CachLy;
     opens controller.CachLy to javafx.fxml;
+    exports controller.TiemCovid;
+    opens controller.TiemCovid to javafx.fxml;
 }

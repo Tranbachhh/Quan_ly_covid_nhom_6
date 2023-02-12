@@ -33,7 +33,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="150.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
@@ -51,7 +51,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="150.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
@@ -69,7 +69,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="150.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
@@ -87,7 +87,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="33.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
@@ -105,7 +105,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="150.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
@@ -123,7 +123,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="45.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
@@ -141,7 +141,7 @@
                         <Font name="System Bold" size="24.0" />
                     </font>
                     <VBox.margin>
-                        <Insets left="10.0" right="10.0" top="10.0" />
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
                     </VBox.margin>
                     <graphic>
                         <ImageView fitHeight="150.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
@@ -153,6 +153,24 @@
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor>
+                </Button>
+                <Button fx:id="tiemCovidButton" mnemonicParsing="false" onAction="#tiemCovidButtonOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #2F333D;" text="Tiêm Covid" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/thong_ke_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <VBox.margin>
+                        <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
+                    </VBox.margin>
                 </Button>
                 <Pane prefHeight="85.0" prefWidth="220.0">
                     <children>
@@ -170,6 +188,6 @@
         </VBox>
     </left>
     <center>
-        <Pane fx:id="mainPane" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #01A9DB;" BorderPane.alignment="CENTER" />
+        <Pane fx:id="mainPane" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #FFFFC9;" BorderPane.alignment="CENTER" />
     </center>
 </BorderPane>

@@ -29,13 +29,14 @@ public class TrangChuController implements Initializable {
 
     @FXML
     private Label tongKhaiBaoYTe;
-//
+    //
     NhanKhauRepository nhanKhauRepository = new NhanKhauRepositoryImpl();
     HoKhauRepository hoKhauRepository = new HoKhauRepositoryImpl();
     KhaiBaoRepository khaiBaoRepository = new KhaiBaoRepositoryImpl();
     TestCovidRepository testCovidRepository = new TestCovidRepositoryImpl();
     CachLyRepository cachLyRepository = new CachLyRepositoryImpl();
 
+    TiemCovidRepository tiemCovidRepository = new TiemCovidRepositoryImpl();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         tongNhanKhauThuongTru.setText(String.valueOf(nhanKhauRepository.tongNhanKhauThuongTru()));
