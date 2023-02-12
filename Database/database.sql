@@ -134,6 +134,17 @@ CREATE TABLE khai_bao(
                                  CONSTRAINT FK_khai_bao_nhan_khau FOREIGN KEY(idNhanKhau) REFERENCES nhan_khau(idNhanKhau) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+-- 12 .Tiêm Covid
+CREATE TABLE tiem_covid(
+                                 id INT NOT NULL AUTO_INCREMENT,
+                                 idNhanKhau INT NOT NULL,
+								 noiTiem NVARCHAR(255) NOT NULL,
+                                 soMui INT NOT NULL,
+                                 CONSTRAINT PK_tiem_covid PRIMARY KEY (id),
+                                 CONSTRAINT FK_tiem_covid_nhan_khau FOREIGN KEY(idNhanKhau) REFERENCES nhan_khau(idNhanKhau) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
 INSERT INTO nhan_khau(hoTen, ngaySinh, noiSinh, gioiTinh, nguyenQuan, danToc, tonGiao, quocTich, ngheNghiep, noiLamViec, cmnd, ngayCap,noiCap, chuyenDenNgay, noiThuongTruTruoc, trangThai) VALUES
                                                                                                                                                                                                  (N'Hoàng Đức Thành', '2002-01-26', N'Bệnh viện Đa Khoa Hưng Yên', N'Nam', N'Hưng Yên', N'Kinh', N'Không', N'Việt Nam', N'Sinh Viên', N'Đại học Bách khoa Hà Nội', 12345678439, '2018-8-8',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2022-12-11', N'Số 43 Đông Tác, Quận Đống Đa, Hà Nội', N'Thường trú'),
                                                                                                                                                                                                  (N'Lê Duy Anh', '2002-11-15', N'Liên Bang Nga', N'Nam', N'Hưng Yên', N'Kinh', N'Không', N'Việt Nam', N'Thiết kế đồ họa', N'Công ty Graphics Design', 123456781, '2019-4-11',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2021-12-12', N'Số 43 Tạ Quang Bửu, Quận Hai Bà Trưng, Hà Nội', N'Thường trú'),
@@ -148,7 +159,7 @@ INSERT INTO nhan_khau(hoTen, ngaySinh, noiSinh, gioiTinh, nguyenQuan, danToc, to
                                                                                                                                                                                                  (N'Nguyễn Thu Hà', '2019-01-15', N'Bệnh viện Việt Đức', N'Nữ', N'Hà Nội', N'Kinh', N'Không', N'Việt Nam', N'Học sinh', N'Trường tiểu học Khương Trung', '', NULL,NULL, '2019-12-16', N'Số 4 Bạch Mai, Quận Hai Bà Trưng, Hà Nội', N'Tạm trú'),
                                                                                                                                                                                                  (N'Đặng Hải Triều', '1995-06-04', N'Bệnh viện Việt Tiệp', N'Nam', N'Hà Nội', N'Kinh', N'Không', N'Việt Nam', N'Drop Test', N'Schanel', 123456780, '2013-10-9',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2020-12-15', N'Số 51 Nguyễn Trãi, Quận Thanh Xuân, Hà Nội', N'Thường Trú'),
                                                                                                                                                                                                  (N'Nguyễn Hải Hà', '1948-02-03', N'Bệnh viện Đại học Y ', N'Nam', N'Hải Phòng', N'Kinh', N'Không', N'Việt Nam', N'', N'', 123456790, '2001-10-11',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2019-12-15', N'Số 5 Đại Cồ Việt, Quận Hai Bà Trưng, Hà Nội', N'Đã mất'),
-                                                                                                                                                                                                 (N'Thân Quang Khoát', '1983-02-29', N'Bệnh viện Bạch Mai', N'Nam', N'Hà Nội', N'Kinh', N'Không', N'Việt Nam', N'Giảng Viên', N'Đại Học Bách Khoa Hà nội', 123456791, '2013-10-11',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2019-12-15', N'Số 35 Minh Khai, Quận Hai Bà Trưng, Hà Nội', N'Thường trú'),
+                                                                                                                                                                                                 (N'Thân Quang Khoát', '1983-02-28', N'Bệnh viện Bạch Mai', N'Nam', N'Hà Nội', N'Kinh', N'Không', N'Việt Nam', N'Giảng Viên', N'Đại Học Bách Khoa Hà nội', 123456791, '2013-10-11',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2019-12-15', N'Số 35 Minh Khai, Quận Hai Bà Trưng, Hà Nội', N'Thường trú'),
                                                                                                                                                                                                  (N'Kiều thị Lan', '1999-07-13', N'Bệnh viện Bạch Mai', N'Nữ', N'Hải Dương', N'Kinh', N'Không', N'Việt Nam', N'Nội Trợ', N'Tại nhà', ' 123456791', '2008-10-11',N'Cục Cảnh sát quản lý hành chính về trật tự xã hội', '2020-11-19', N'Số 15 Hoàng Mai, Quận Hoàng Mai, Hà Nội', N'Thường trú');
 INSERT INTO ho_khau(idChuHo, tinhThanhPho, quanHuyen, phuongXa, diaChi, ngayTao) VALUES
                                                                                                 (1, N'Hà Nội', N'Hai Bà Trưng', N'Bách Khoa', N'Số 1 Tạ Quang Bửu, Quận Hai Bà Trưng, Hà Nội', '2022-11-08'),
@@ -190,3 +201,9 @@ INSERT INTO cach_ly(idNhanKhau, ngayBatDau,soNgayCachLy, noiCachLy, mucDoCachLy,
     (6, '2022-11-17',21, N'Khu A', N'F0',N'Tiếp xúc với F1'),
     (7, '2022-08-20',21, N'Tại nhà', N'F1',N'Tiếp xúc với F0');
 
+INSERT INTO tiem_covid(idNhanKhau,noiTiem,soMui) value
+							(1,N'Hà Nội',1),
+                            (2,N'Đại học Bách Khoa Hà Nội',2),
+                            (3,N'Hưng Yên',2),
+                            (4,N'Bệnh viện Bạch Mai',3),
+                            (5,N'Đại học Y Hà Nội',3);
