@@ -12,7 +12,7 @@ ALTER TABLE users
     ADD UNIQUE(Username);
 
 INSERT INTO users(Username, Password) VALUES
-    ('admin', 1);
+    ('nhom6', 'nhom6');
 -- 2. Nhân khẩu
 CREATE TABLE nhan_khau(
                           idNhanKhau INT NOT NULL AUTO_INCREMENT,

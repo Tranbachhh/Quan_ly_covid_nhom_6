@@ -35,7 +35,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Label alignment="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="45.0" prefWidth="446.0" text="Thêm mới Cách Ly" textFill="#f8f3f3">
+                <Label alignment="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="45.0" prefWidth="446.0" text="Thêm mới Tiêm Vaccine" textFill="#f8f3f3">
                     <font>
                         <Font name="System Bold" size="30.0" />
                     </font>
