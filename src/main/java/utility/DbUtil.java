@@ -11,7 +11,7 @@ public class DbUtil {
             String driver="com.mysql.cj.jdbc.Driver";
             String url="jdbc:mysql://localhost:3306/demo";
             String userName="root";
-            String password="bach20062002";
+            String password="thanhpro";
             Class.forName(driver);
 
             connection = DriverManager.getConnection(url, userName, password);

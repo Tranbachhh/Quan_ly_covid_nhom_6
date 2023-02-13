@@ -8,6 +8,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -15,9 +17,9 @@
 
 <AnchorPane prefHeight="709.0" prefWidth="953.0" style="-fx-background-color: #2F333D;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TiemCovid.TiemCovidController">
     <children>
-        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0">
+        <Pane fx:id="mainPane" layoutY="5.0" prefHeight="700.0" prefWidth="1180.0" style="-fx-background-color: #01A9DB;">
             <children>
-                <Label layoutX="350.0" layoutY="14.0" text="Quản lý thông tin Cách ly" textFill="#f8f3f3">
+                <Label layoutX="350.0" layoutY="14.0" text="Quản lý thông tin tiêm Vaccine" textFill="#f8f3f3">
                     <font>
                         <Font name="System Bold" size="30.0" />
                     </font>
@@ -51,6 +53,11 @@
                             </font>
                         </TextField>
                         <ComboBox fx:id="truongTraCuuF" layoutX="507.0" layoutY="1.0" prefHeight="49.0" prefWidth="231.0" promptText="Chọn trường tra cứu" style="-fx-font-size: 15; -fx-background-radius: 15; -fx-background-color: #F1D4A7;" />
+                  <ImageView fitHeight="57.0" fitWidth="49.0" layoutX="745.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/search.png" />
+                     </image>
+                  </ImageView>
                     </children>
                 </Pane>
                 <Text fill="#d7ca13" layoutX="70.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(*) Với mỗi một bản khai báo, chọn chuột phải để hiện các phím chức năng" wrappingWidth="721.00390625">
